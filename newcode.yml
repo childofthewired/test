@@ -1,0 +1,12 @@
+---
+- name: This is new code
+  hosts: only_cool_ones
+  vars: too_many_to_count
+  tasks:
+          - name: Install a package
+            yum:
+                    name:
+                            - httpd
+                            - firewalld
+                            - firefox
+                    state: latest
